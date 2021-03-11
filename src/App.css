@@ -1,38 +1,135 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+/*Utility class*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(
+    to right top,
+    #8492ed,
+    #c176d8,
+    #ed52a8,
+    #fd3a65,
+    #eb4b12
+  );
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  color: white;
+  padding: 10px 12px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+.container h1 {
+  text-align: center;
+  padding: 50px 10px 25px;
+}
+form {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-size: 1.8em;
+  margin-right: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  width: 10%;
+  padding: 8px 10px;
+  border: 0;
+  font-size: 1.2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input:focus {
+  outline: 0;
+}
+button {
+  padding: 8px 16px;
+  border: 0;
+  font-size: 1.2em;
+  margin-left: 30px;
+  background: rgb(28, 53, 82);
   color: white;
+  transition: all 0.3s ease-out;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  margin-top: 60px;
+}
+p {
+  margin-top: 40px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .container h1 {
+    padding: 20px 10px 15px;
+    font-size: 1.5em;
   }
-  to {
-    transform: rotate(360deg);
+  label {
+    font-size: 1.4em;
+    margin-right: 10px;
+  }
+  input {
+    width: 15%;
+    padding: 5px 10px;
+    font-size: 1.1em;
+  }
+  button {
+    padding: 5px 10px;
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  main {
+    margin-top: 20px;
   }
 }
